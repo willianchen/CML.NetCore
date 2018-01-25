@@ -1,0 +1,14 @@
+Application startup exception: Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Microsoft.AspNetCore.Hosting.Server.IServer' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureServer()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+
+Unhandled Exception: Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Microsoft.Extensions.Logging.ILogger`1[[Microsoft.AspNetCore.Hosting.Internal.WebHost, Microsoft.AspNetCore.Hosting, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHostBuilder.Build()
+   at NetCoreeWeb.Program.Main(String[] args) in D:\GitWorkSpace\CML.NetCore\NetCoreeWeb\Program.cs:line 17

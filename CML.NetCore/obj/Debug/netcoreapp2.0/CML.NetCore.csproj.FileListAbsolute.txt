@@ -1,0 +1,15 @@
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.NetCore.deps.json
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.NetCore.runtimeconfig.json
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.NetCore.runtimeconfig.dev.json
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.NetCore.dll
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.NetCore.pdb
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.dll
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\obj\Debug\netcoreapp2.0\CML.NetCore.pdb
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\nlog.config
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\CML.Lib.pdb
+D:\GitWorkSpace\CML.NetCore\CML.NetCore\bin\Debug\netcoreapp2.0\appsettings.json

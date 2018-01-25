@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dependency\Intercept\**" />
+    <Compile Remove="Emits\**" />
+    <Compile Remove="Logger\**" />
+    <EmbeddedResource Remove="Dependency\Intercept\**" />
+    <EmbeddedResource Remove="Emits\**" />
+    <EmbeddedResource Remove="Logger\**" />
+    <None Remove="Dependency\Intercept\**" />
+    <None Remove="Emits\**" />
+    <None Remove="Logger\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utils\AsyncLocalUtil.cs" />
+    <Compile Remove="Utils\DbParamUtil.cs" />
+    <Compile Remove="Utils\ExcelUtil.cs" />
+    <Compile Remove="Utils\LogUtil.cs" />
+    <Compile Remove="Utils\ValidateCodeUtil.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+    <PackageReference Include="Saritasa.Tools.NLog4" Version="0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="T4Template\frame.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>frame.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="T4Template\frame.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>frame.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

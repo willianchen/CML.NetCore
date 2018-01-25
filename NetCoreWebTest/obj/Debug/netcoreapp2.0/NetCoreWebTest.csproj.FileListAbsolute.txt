@@ -1,0 +1,13 @@
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\NetCoreWebTest.deps.json
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\NetCoreWebTest.runtimeconfig.json
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\NetCoreWebTest.runtimeconfig.dev.json
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\NetCoreWebTest.dll
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\NetCoreWebTest.pdb
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.dll
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.pdb
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\obj\Debug\netcoreapp2.0\NetCoreWebTest.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\NetCoreWebTest\bin\Debug\netcoreapp2.0\CML.Lib.pdb

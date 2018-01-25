@@ -1,0 +1,8 @@
+D:\GitWorkSpace\CML.NetCore\CML.Lib\obj\Debug\netstandard2.0\CML.Lib.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\CML.Lib\obj\Debug\netstandard2.0\CML.Lib.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Lib\obj\Debug\netstandard2.0\CML.Lib.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Lib\obj\Debug\netstandard2.0\CML.Lib.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\CML.Lib\bin\Debug\netstandard2.0\CML.Lib.deps.json
+D:\GitWorkSpace\CML.NetCore\CML.Lib\bin\Debug\netstandard2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\CML.Lib\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\GitWorkSpace\CML.NetCore\CML.Lib\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
