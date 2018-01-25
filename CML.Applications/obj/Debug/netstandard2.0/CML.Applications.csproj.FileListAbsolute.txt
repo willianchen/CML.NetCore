@@ -1,9 +1,0 @@
-D:\GitWorkSpace\CML.NetCore\CML.Applications\bin\Debug\netstandard2.0\CML.Applications.deps.json
-D:\GitWorkSpace\CML.NetCore\CML.Applications\bin\Debug\netstandard2.0\CML.Applications.dll
-D:\GitWorkSpace\CML.NetCore\CML.Applications\bin\Debug\netstandard2.0\CML.Applications.pdb
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.csprojResolveAssemblyReference.cache
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.csproj.CoreCompileInputs.cache
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.AssemblyInfoInputs.cache
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.AssemblyInfo.cs
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.dll
-D:\GitWorkSpace\CML.NetCore\CML.Applications\obj\Debug\netstandard2.0\CML.Applications.pdb

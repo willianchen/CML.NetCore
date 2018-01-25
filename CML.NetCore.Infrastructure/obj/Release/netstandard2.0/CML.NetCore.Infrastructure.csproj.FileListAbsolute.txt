@@ -1,9 +1,0 @@
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\bin\Release\netstandard2.0\CML.NetCore.Infrastructure.deps.json
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\bin\Release\netstandard2.0\CML.NetCore.Infrastructure.dll
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\bin\Release\netstandard2.0\CML.NetCore.Infrastructure.pdb
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.csprojResolveAssemblyReference.cache
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.csproj.CoreCompileInputs.cache
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.AssemblyInfoInputs.cache
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.AssemblyInfo.cs
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.dll
-D:\GitWorkSpace\CML.NetCore\CML.NetCore.Infrastructure\obj\Release\netstandard2.0\CML.NetCore.Infrastructure.pdb
