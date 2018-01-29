@@ -1,0 +1,12 @@
+/CML.Applications/bin
+/CML.Applications/obj
+/CML.DataAccess/bin
+/CML.DataAccess/obj
+/CML.Lib/obj
+/CML.Lib/bin
+/CML.NetCore/obj
+/CML.NetCore/bin
+/CML.NetCore.Infrastructure/bin
+/CML.NetCore.Infrastructure/obj
+/NewCoreWeb/obj
+/NewCoreWeb/bin

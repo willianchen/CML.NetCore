@@ -26,12 +26,13 @@ namespace CML.NetCore
 
             var jsonString = Json.GetJsonByObj(info);
 
-          //  Console.WriteLine(jsonString);
+            //  Console.WriteLine(jsonString);
 
-            Logger.Info("test info Json {0}",jsonString);
+            Logger.Info("test info Json {0}", jsonString);
 
             Console.ReadLine();
 
+            Task.Factory.StartNew(() => { return true; });
         }
 
         //// This method gets called by the runtime. Use this method to add services to the container.
