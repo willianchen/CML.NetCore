@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Autofac.Extras.DynamicProxy;
-using CML.Lib.Helplers;
+using CML.Lib.Utils;
 
 namespace CML.Lib.Dependency.AutoFac
 {
@@ -320,7 +320,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService(type);
+                return WebUtil.HttpContext.RequestServices.GetService(type);
             }
             return Container.Resolve(type);
         }
@@ -329,7 +329,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService<IComponentContext>().ResolveNamed<T>(serviceName);
+                return WebUtil.HttpContext.RequestServices.GetService<IComponentContext>().ResolveNamed<T>(serviceName);
             }
             return Container.ResolveNamed<T>(serviceName);
         }
@@ -338,7 +338,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService<IComponentContext>().ResolveNamed(serviceName, serviceType);
+                return WebUtil.HttpContext.RequestServices.GetService<IComponentContext>().ResolveNamed(serviceName, serviceType);
             }
             return Container.ResolveNamed(serviceName, serviceType);
         }
@@ -347,7 +347,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService<IComponentContext>().TryResolve(out instance);
+                return WebUtil.HttpContext.RequestServices.GetService<IComponentContext>().TryResolve(out instance);
             }
             return Container.TryResolve<T>(out instance);
         }
@@ -356,7 +356,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService<IComponentContext>().TryResolve(serviceType, out instance);
+                return WebUtil.HttpContext.RequestServices.GetService<IComponentContext>().TryResolve(serviceType, out instance);
             }
             return Container.TryResolve(serviceType, out instance);
         }
@@ -365,7 +365,7 @@ namespace CML.Lib.Dependency.AutoFac
         {
             if (IsExistSerivceContext())
             {
-                return WebHelper.HttpContext.RequestServices.GetService<IComponentContext>().TryResolveNamed(serviceName, serviceType, out instance);
+                return WebUtil.HttpContext.RequestServices.GetService<IComponentContext>().TryResolveNamed(serviceName, serviceType, out instance);
             }
 
             return Container.TryResolveNamed(serviceName, serviceType, out instance);
@@ -379,7 +379,7 @@ namespace CML.Lib.Dependency.AutoFac
         /// <returns></returns>
         private bool IsExistSerivceContext()
         {
-            return WebHelper.HttpContext?.RequestServices != null;
+            return WebUtil.HttpContext?.RequestServices != null;
         }
 
         public IServiceProvider RegisterProvider(IServiceCollection services)

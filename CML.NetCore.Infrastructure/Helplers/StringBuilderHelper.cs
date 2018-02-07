@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CML.Lib.Helplers
+namespace CML.Lib.Utils
 {
     /// <summary>
     /// Copyright (C) 2017 cml 版权所有。

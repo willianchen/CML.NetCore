@@ -2,8 +2,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using CML.Lib.Configurations;
+using CML.Lib.Utils;
 using CML.Lib.Json;
 using CML.Lib.Logging;
 
@@ -21,18 +23,34 @@ namespace CML.NetCore
             ConfigurationHelper.SetConsoleLogger();
             Logger.Info("test info logger");
             Logger.Error(new Exception("测试"));
+            Console.WriteLine("当前线程ID：" + Thread.CurrentThread.ManagedThreadId.ToString());
 
-            User info = new User() { UserID = 1, userName = "asdfasdf" };
+            AsyncHelper.Run(async () =>
+                {
+                    await new TaskFactory().StartNew(() =>
+                    {
+                        Console.WriteLine("当前线程ID：" + Thread.CurrentThread.ManagedThreadId.ToString());
+                    });
 
-            var jsonString = Json.GetJsonByObj(info);
+                  //  throw new Exception("异常报错");
+                }
+            );
 
-            //  Console.WriteLine(jsonString);
 
-            Logger.Info("test info Json {0}", jsonString);
+            //User info = new User() { UserID = 1, userName = "asdfasdf" };
+
+            //var jsonString = Json.GetJsonByObj(info);
+
+            ////  Console.WriteLine(jsonString);
+
+            //Logger.Info("test info Json {0}", jsonString);
 
             Console.ReadLine();
 
-            Task.Factory.StartNew(() => { return true; });
+            Task.Factory.StartNew(() =>
+            {
+                return true;
+            });
         }
 
         //// This method gets called by the runtime. Use this method to add services to the container.

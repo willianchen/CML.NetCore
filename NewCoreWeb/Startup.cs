@@ -33,6 +33,7 @@ namespace NewCoreWeb
         //    var container = builder.Build();
             return ContainerManager.RegisterProvider(services);
             //new AutofacServiceProvider(container);
+        //    Configuration.GetConnectionString()
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

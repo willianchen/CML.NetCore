@@ -6,7 +6,7 @@ using System.Linq;
 using CML.Lib.Extensions;
 using Microsoft.AspNetCore.Http.Extensions;
 
-namespace CML.Lib.Helplers
+namespace CML.Lib.Utils
 {
     /// <summary>
     /// Copyright (C) 2017 cml 版权所有。
@@ -15,7 +15,7 @@ namespace CML.Lib.Helplers
     /// 类功能描述：WebHelper
     /// 创建标识：cml 2018/1/25 11:42:42
     /// </summary>
-    public static class WebHelper
+    public static class WebUtil
     {
 
         #region 静态构造方法
@@ -23,7 +23,7 @@ namespace CML.Lib.Helplers
         /// <summary>
         /// 初始化Web操作
         /// </summary>
-        static WebHelper()
+        static WebUtil()
         {
             try
             {
