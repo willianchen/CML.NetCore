@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CML.Lib.Helplers;
 using CML.Lib.Utils;
+using String = System.String;
 
 namespace CML.Lib.Extensions
 {
@@ -13,7 +15,7 @@ namespace CML.Lib.Extensions
     /// 类功能描述：ObjectExtension
     /// 创建标识：cml 2018/1/25 15:55:22
     /// </summary>
-    public static  class ObjectExtension
+    public static class ObjectExtension
     {
         /// <summary>
         /// object ToString转化
@@ -169,6 +171,18 @@ namespace CML.Lib.Extensions
             if (obj == null)
                 return new List<Guid>();
             return obj.Select(t => t.ToGuid()).ToList();
+        }
+
+        /// <summary>
+        /// 集合分隔符连接
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <param name="separator">分隔符 默认逗号,</param>
+        /// <returns></returns>
+        public static string ToJoin<T>(this IEnumerable<T> obj, string separator = ",")
+        {
+            return StringTools.Join(obj, separator);
         }
     }
 }
