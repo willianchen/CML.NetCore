@@ -232,7 +232,7 @@ namespace CML.DataAccess.DbClient
                 string text = WebUtil.Url;
                 if (string.IsNullOrWhiteSpace(text))
                 {
-                    if (text.Contains("?"))
+                    if (text != null && text.Contains("?"))
                     {
                         text = text.Remove(text.IndexOf("?"));
                     }

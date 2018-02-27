@@ -16,18 +16,6 @@ namespace CML.Lib.Logging
     {
         static ILoggerFactory defaultFactory;
 
-        // todo: port: revisit
-        //static InternalLoggerFactory()
-        //{
-        //    // Initiate some time-consuming background jobs here,
-        //    // because this class is often initialized at the earliest time.
-        //    try
-        //    {
-        //        Class.forName(ThreadLocalRandom.class.getName(), true, InternalLoggerFactory.class.getClassLoader());
-        //    } catch (Exception ignored) {
-        //        // Should not fail, but it does not harm to fail.
-        //    }
-        //}
 
         static ILoggerFactory NewDefaultFactory(string name)
         {
@@ -36,7 +24,7 @@ namespace CML.Lib.Logging
             f.CreateLogger(name).LogDebug("Using NLoggerProvider as the default logging framework");
             return f;
         }
-
+   
         /// <summary>
         ///     Gets or sets the default factory.
         /// </summary>

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewCoreWeb", "NewCoreWeb\Ne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.Applications", "CML.Applications\CML.Applications.csproj", "{E6633B5A-F9FA-45E5-AAB2-8A3827F32568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CML.Lib.Test", "CML.Lib.Test\CML.Lib.Test.csproj", "{31441DAC-4A19-465C-AD55-6EA27A6494EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.Lib.Test", "CML.Lib.Test\CML.Lib.Test.csproj", "{31441DAC-4A19-465C-AD55-6EA27A6494EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CML.DataAccess.Test", "CML.DataAccess.Test\CML.DataAccess.Test.csproj", "{7277CE7A-D24A-4245-AB43-B022654BCD38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{31441DAC-4A19-465C-AD55-6EA27A6494EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31441DAC-4A19-465C-AD55-6EA27A6494EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31441DAC-4A19-465C-AD55-6EA27A6494EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7277CE7A-D24A-4245-AB43-B022654BCD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7277CE7A-D24A-4245-AB43-B022654BCD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7277CE7A-D24A-4245-AB43-B022654BCD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7277CE7A-D24A-4245-AB43-B022654BCD38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
