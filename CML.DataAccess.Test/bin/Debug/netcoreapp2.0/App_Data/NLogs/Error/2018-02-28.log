@@ -1,0 +1,20 @@
+2018-02-28 10:05:56.6261 asdf
+2018-02-28 10:05:56.8773 执行的sql语句:SELECT FID,FName,FAge,FBirthday from Demo  WHERE Type = @Type AND NodeType = @NodeType AND Parameters = @Parameters AND Name = @Name AND Body = @Body AND ReturnType = @ReturnType AND TailCall = @TailCall AND CanReduce = @CanReduce/* URL: */
+2018-02-28 10:05:56.8773 Unexpected exception:
+2018-02-28 10:41:24.8864 asdf
+2018-02-28 10:45:12.0043 asdf
+2018-02-28 10:47:04.8111 执行的sql语句:SELECT FID,FName,FAge,FBirthday from Demo  WHERE Type = @Type AND NodeType = @NodeType AND Parameters = @Parameters AND Name = @Name AND Body = @Body AND ReturnType = @ReturnType AND TailCall = @TailCall AND CanReduce = @CanReduce/* URL: */
+2018-02-28 10:47:04.8111 Unexpected exception:
+2018-02-28 13:33:04.7843 asdf
+2018-02-28 13:33:30.5133 asdf
+2018-02-28 13:34:37.6999 asdf
+2018-02-28 13:36:06.6018 asdf
+2018-02-28 13:38:30.2972 asdf
+2018-02-28 13:38:30.6562 执行的sql语句:INSERT INTO Demo (FName,FAge,FBirthday) VALUES (@FName,@FAge,@FBirthday); SELECT scope_identity() ;/* URL: */
+2018-02-28 13:38:30.6562 Unexpected exception:
+2018-02-28 13:39:23.7207 asdf
+2018-02-28 13:39:23.9239 执行的sql语句:INSERT INTO Demo (FName,FAge,FBirthday) VALUES (@FName,@FAge,@FBirthday); SELECT scope_identity() ;/* URL: */
+2018-02-28 13:39:23.9239 Unexpected exception:
+2018-02-28 13:39:32.7365 asdf
+2018-02-28 13:57:54.8427 asdf
+2018-02-28 13:58:15.8292 asdf

@@ -1,5 +1,6 @@
 ﻿using CML.DataAccess.Attributes;
 using CML.DataAccess.DbClient;
+using CML.DataAccess.Expressions;
 using CML.Lib.Extensions;
 using CML.Lib.Utils;
 using System;
@@ -7,6 +8,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 
@@ -19,7 +21,7 @@ namespace CML.DataAccess.Utils
     /// 类功能描述：SqlQueryUtil
     /// 创建标识：cml 2018/2/8 16:52:05
     /// </summary>
-    public static class SqlQueryUtil
+    public  static partial class  SqlQueryUtil
     {
         /// <summary>
         /// 拼接单个插入的SqlQuery
@@ -248,6 +250,43 @@ namespace CML.DataAccess.Utils
         }
 
         /// <summary>
+        /// 拼接查询前几条的SqlQuery
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="condition">查询条件</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="topCount">查询数量</param>
+        /// <param name="dbType">数据库类型，默认MSSQLServer</param>
+        /// <returns>查询的SqlQuery</returns>
+        public static SqlQuery BuilderQueryTopSqlQuery<T>(Expression<Func<T, bool>> condition, string tableName, int topCount = 1, DatabaseType dbType = DatabaseType.MSSQLServer)
+        {
+            return BuilderQuerySqlQuery(condition, tableName, string.Empty, topCount: topCount, dbType: dbType);
+        }
+
+        /// <summary>
+        /// 拼接查询前几条的SqlQuery
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="condition">查询条件</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="order">排序字段</param>
+        /// <param name="topCount">查询数量</param>
+        /// <param name="dbType">数据库类型，默认MSSQLServer</param>
+        /// <returns>查询的SqlQuery</returns>
+        public static SqlQuery BuilderQuerySqlQuery<T>(Expression<Func<T, bool>> condition, string tableName, string order, int? topCount, DatabaseType dbType = DatabaseType.MSSQLServer)
+        {
+            var whereInfo = SqlExpressionVisitor.GetSqlWhere(condition, dbType: dbType);
+            var whereFields = string.Empty;
+            if (!string.IsNullOrWhiteSpace(whereInfo.Item1))
+            {
+                whereFields = $" WHERE {whereInfo.Item1}";
+            }
+            string sql = BuildQueryString("*", tableName, whereFields, order, topCount, dbType);
+            return new SqlQuery(sql, whereInfo.Item2);
+        }
+
+
+        /// <summary>
         /// 拼接查询数量的SqlQuery
         /// </summary>
         /// <param name="condition">查询条件</param>
@@ -267,7 +306,25 @@ namespace CML.DataAccess.Utils
             return new SqlQuery(sql, condition);
         }
 
-
+        /// <summary>
+        /// 拼接查询数量的SqlQuery
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="condition">查询条件</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="dbType">数据库类型，默认MSSQLServer</param>
+        /// <returns>查询数量的SqlQuery</returns>
+        public static SqlQuery BuilderQueryCountSqlQuery<T>(Expression<Func<T, bool>> condition, string tableName, DatabaseType dbType = DatabaseType.MSSQLServer)
+        {
+            var whereInfo = SqlExpressionVisitor.GetSqlWhere(condition, dbType: dbType);
+            var whereFields = string.Empty;
+            if (!string.IsNullOrWhiteSpace(whereInfo.Item1))
+            {
+                whereFields = $" WHERE {whereInfo.Item1}";
+            }
+            var sql = string.Format("SELECT COUNT(0) FROM {0}{1};", tableName, whereFields);
+            return new SqlQuery(sql, whereInfo.Item2);
+        }
 
         /// <summary>
         /// 拼接分页的SQL语句

@@ -17,3 +17,5 @@ D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\Microsoft.Exten
 D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\CML.Lib.pdb
 D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.xml
 D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\appsettings.json
+D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll
+D:\GitWorkSpace\CML.NetCore\CML.Lib.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.xml

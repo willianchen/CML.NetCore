@@ -16,6 +16,23 @@ namespace CML.DataAccess
     /// </summary>
     internal static class DBSettings
     {
+
+        /// <summary>
+        /// 根据数据库类型和连接信息创建DatabaseProperty
+        /// </summary>
+        /// <param name="databaseType">数据库类型</param>
+        /// <param name="connection">连接信息</param>
+        /// <returns>DatabaseProperty</returns>
+        public static DatabaseProperty CreateDatabaseProperty(DatabaseType databaseType, string connection)
+        {
+            DatabaseConnection dbConnection = new DatabaseConnection()
+            {
+                ConnectionString = connection,
+                DatabaseType = databaseType
+            };
+            return new DatabaseProperty(dbConnection, dbConnection);
+        }
+
         /// <summary>
         /// 根据配置名字获取数据库属性信息
         /// </summary>

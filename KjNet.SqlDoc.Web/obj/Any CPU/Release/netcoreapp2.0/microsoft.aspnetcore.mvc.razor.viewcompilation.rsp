@@ -1,0 +1,7 @@
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Web
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=KjNet.SqlDoc.Web
+--content-root=D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Web
+--file=D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Web\Views\DataBase\Index.cshtml
+--file=D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Web\Views\Home\Index.cshtml
+--file=D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Web\Views\Shared\_Layout.cshtml

@@ -61,6 +61,20 @@ namespace CML.DataAccess
             }
         }
 
+
+        /// <summary>
+        ///  获取数据库访问接口
+        /// </summary>
+        /// <param name="databaseType">数据库类型</param>
+        /// <param name="connection">连接信息</param>
+        /// <param name="isWriter">是否为写</param>
+        /// <returns>数据库访问接口</returns>
+        public static IDataAccess GetDataAccess(DatabaseType databaseType, string connection, bool isWriter = true)
+        {
+            var dbProperty = DBSettings.CreateDatabaseProperty(databaseType, connection);
+            return new SqlDataAccess(dbProperty, isWriter);
+        }
+
         /// <summary>
         /// 常见数据库访问类
         /// </summary>

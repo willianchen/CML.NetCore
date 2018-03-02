@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CML.DataAccess.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,6 +14,8 @@ namespace CML.DataAccess.Test
     /// </summary>
     public class Demo
     {
+        [Key]
+        [Identity]
         public int FID { get; set; }
         public string FName { get; set; }
 

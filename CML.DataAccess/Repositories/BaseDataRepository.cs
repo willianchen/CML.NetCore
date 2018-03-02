@@ -243,7 +243,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public TDto GetDto<TDto>(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<TDto>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName,dbType: WriterDataType);
             return GetDataAccess().ExecuteScalar<TDto>(query);
         }
 
@@ -271,7 +271,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public Task<TDto> GetDtoAsync<TDto>(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<TDto>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, topCount: 1, dbType: ReaderDataType);
             return GetDataAccess().ExecuteScalarAsync<TDto>(query);
         }
 
@@ -297,7 +297,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public T GetInfo(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<T>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName,  topCount: 1, dbType: ReaderDataType);
             return GetDataAccess().ExecuteScalar<T>(query);
         }
 
@@ -310,7 +310,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public Task<T> GetInfoAsync(object condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<T>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<T>(condition, TableName, string.Empty, topCount: 1, ignoreFields: ignoreFields, dbType: WriterDataType);
             return GetDataAccess().ExecuteScalarAsync<T>(query);
         }
         /// <summary>

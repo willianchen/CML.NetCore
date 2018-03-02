@@ -87,17 +87,17 @@ namespace CML.DataAccess.DbClient
                         {
                             AddParameter(dbParam.ParameterName, dbParam.Value, dbType: dbParam.DbType, size: dbParam.Size);
                         }
-                        //else
-                        //{
-                        //    var parameterInfoList = param.ToDbParam<DbParameterInfo>(string.Empty, prefix ?? string.Empty);
-                        //    foreach (var item in parameterInfoList)
-                        //    {
-                        //        if (!(ignoreFields != null && ignoreFields.Contains(item.ParameterName)))
-                        //        {
-                        //            AddParameter(item);
-                        //        }
-                        //    }
-                        //}
+                        else
+                        {
+                            var parameterInfoList = param.ToDbParam<DbParameterInfo>(string.Empty, prefix ?? string.Empty);
+                            foreach (var item in parameterInfoList)
+                            {
+                                if (!(ignoreFields != null && ignoreFields.Contains(item.ParameterName)))
+                                {
+                                    AddParameter(item);
+                                }
+                            }
+                        }
                     }
                 }
                 else

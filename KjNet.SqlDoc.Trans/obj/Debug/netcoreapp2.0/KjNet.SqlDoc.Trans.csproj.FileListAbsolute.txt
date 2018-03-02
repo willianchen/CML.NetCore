@@ -1,0 +1,9 @@
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\bin\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.deps.json
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\bin\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.dll
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\bin\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.pdb
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.dll
+D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Trans\obj\Debug\netcoreapp2.0\KjNet.SqlDoc.Trans.pdb

@@ -16,12 +16,21 @@ namespace CML.DataAccess.Test
         {
 
             BootStrap.Init();
-        //    ConfigurationHelper.SetConsoleLogger();
+            //    ConfigurationHelper.SetConsoleLogger();
             LogUtil.Error("asdf");
-            DemoRepository demo = new DemoRepository(new DataAccessFactory());
-            var list = demo.QueryList();
+            DemoRepository demoRep = new DemoRepository(new DataAccessFactory());
+            
+            #region ÐÂÔö
+            Demo newDemo = new Demo() { FAge = 1, FBirthday = DateTime.Now, FName = "test1" };
+            demoRep.Insert(newDemo);
+            #endregion
+
+            #region ²éÑ¯
+            var list = demoRep.QueryList(x=>x.FName=="test1");
             var jsonList = new NewtonsoftJsonSerializer().GetJsonByObj(list);
             Console.WriteLine(jsonList);
+            #endregion
+
         }
     }
 }

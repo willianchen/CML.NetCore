@@ -21,5 +21,7 @@ namespace CML.DataAccess
         /// <param name="isWriter">是否为写连接，不是则为读连接，默认为写连接</param>
         /// <returns>数据操作</returns>
         IDataAccess GetDataAccess(string configName, bool isWriter = true);
+
+     
     }
 }
