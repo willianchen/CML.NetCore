@@ -14,79 +14,89 @@
     <meta name="renderer" content="webkit">
     <meta charset="utf-8">
     <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/css/font.css" rel="stylesheet" />
+    <link href="~/css/xadmin.css" rel="stylesheet" />
 </head>
-<body class="layui-layout-body">
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header">
-            <div class="layui-logo">数据结构文档</div>
+<body>
+
+    <div class="container">
+        <div class="logo"><a href="/">数据结构文档</a></div>
+
+        <div class="left_open">
+            <i title="展开左侧栏" class="iconfont">&#xe699;</i>
         </div>
-
-        <div class="layui-side layui-bg-black">
-            <div class="layui-side-scroll">
-                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="javascript:;">数据库连接</a>
-                        <dl class="layui-nav-child">
-
-                            @if (Model != null && Model.Any())
+        @*<ul class="layui-nav right" lay-filter="">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">admin</a>
+                    <dl class="layui-nav-child">
+                        <!-- 二级菜单 -->
+                        <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd>
+                        <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
+                        <dd><a href="./login.html">退出</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item to-index"><a href="/">前台首页</a></li>
+            </ul>*@
+    </div>
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <li class="open">
+                    <a href="javascript:;">
+                        <i class="iconfont layui-icon"></i>
+                        <cite>数据库连接</cite>
+                        <i class="iconfont nav_right">&#xe6a6;</i>
+                    </a>
+                    <ul class="sub-menu">
+                        @if (Model != null && Model.Any())
+                        {
+                            int index = 0;
+                            foreach (var item in Model)
                             {
-                                int index = 0;
-                                foreach (var item in Model)
-                                {
-                                    <dd>
-                                        <a class="J_menuItem" href="/DataBase/index/@item.Id" data-index="@index">@item.Title [@item.DbType]</a>
-                                    </dd>
-                                    index++;
-                                }
+                                <li>
+                                    <a _href="/DataBase/index/@item.Id">
+                                        <i class="iconfont">&#xe6a7;</i>
+                                        <cite>@item.Title [@item.DbType]</cite>
+                                    </a>
+                                </li>
+
+                                index++;
                             }
-                        </dl>
-                    </li>
-                </ul>
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="x-slide_left"></div> -->
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+            <ul class="layui-tab-title">
+                <li>首页</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <iframe src='/Home/Welcome' frameborder="0" style="width:100%;height:95%;" data-id="/DataBase/" scrolling="yes" class="x-iframe"></iframe>
+                </div>
             </div>
         </div>
-
-        <div class="layui-body">
+    </div>
+    <div class="page-content-bg"></div>
+    <!-- 右侧主体结束 -->
+    @*<div class="layui-body">
             <iframe class="J_iframe" name="iframe0" style="width:100%;height:95%;" src="" frameborder="0" data-id="/DataBase/"></iframe>
-        </div>
+        </div>*@
 
-        <div class="layui-footer">
-            <!-- 底部固定区域 -->
-            © 数据结构文档版权 kjnet 2018
-        </div>
+    <div class="footer">
+        <!-- 底部固定区域 -->
+        © 数据结构文档版权 kjnet 2018
     </div>
     <script src="~/script/jquery-1.8.2.min.js"></script>
     <script src="~/script/layer/layer.js"></script>
     <script src="~/layui/layui.js"></script>
-
     <script src="~/script/Common/btframe.js"></script>
-    <script>
-        //JavaScript代码区域
-        layui.use('element', function () {
-            var element = layui.element;
-
-        });
-        $(function () {
-            $('.J_menuItem').on('click', menuItem);
-        })
-
-
-        function menuItem() {
-            $(this).parent().addClass("layui-this").siblings("dd").removeClass("layui-this");
-            var dataUrl = $(this).attr('href'),
-                dataIndex = $(this).data('index'),
-                menuName = $.trim($(this).html()).replace(/<b class\=\"g-static\"\>(.*)<\/b\>/g, '');
-            LoadingFunc(true);
-            var target = $('.J_iframe:visible');
-            var url = target.attr(dataUrl);
-            target.attr('src', dataUrl).load(function () {
-                HidenLoading();
-            });
-
-        //    $(".J_iframe").attr("src", dataUrl);
-     
-            return false;
-        }
-    </script>
+    <script src="~/script/Common/admin.js"></script>
 </body>
 </html>

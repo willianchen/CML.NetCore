@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.NetCore", "CML.NetCore\CML.NetCore.csproj", "{03BA8726-F62C-4D74-AC96-6F10A0AF626A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.Lib", "CML.NetCore.Infrastructure\CML.Lib.csproj", "{5083041E-6654-4A1A-9F1F-9A87806598CF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.DataAccess", "CML.DataAccess\CML.DataAccess.csproj", "{BAD9D7E9-4257-4051-B353-6FC932E87B48}"
@@ -15,19 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.Applications", "CML.App
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.Lib.Test", "CML.Lib.Test\CML.Lib.Test.csproj", "{31441DAC-4A19-465C-AD55-6EA27A6494EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CML.DataAccess.Test", "CML.DataAccess.Test\CML.DataAccess.Test.csproj", "{7277CE7A-D24A-4245-AB43-B022654BCD38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.DataAccess.Test", "CML.DataAccess.Test\CML.DataAccess.Test.csproj", "{7277CE7A-D24A-4245-AB43-B022654BCD38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KjNet.SqlDoc.Web", "KjNet.SqlDoc.Web\KjNet.SqlDoc.Web.csproj", "{196EE3B8-93F6-4DBA-B6EE-AFDC204482B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KjNet.SqlDoc.Web", "KjNet.SqlDoc.Web\KjNet.SqlDoc.Web.csproj", "{196EE3B8-93F6-4DBA-B6EE-AFDC204482B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_业务处理", "1_业务处理", "{EAC0BAEA-7F8E-49DC-912C-2A8A389B4E80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KjNet.SqlDoc.Repository", "KjNet.SqlDoc.Repository\KjNet.SqlDoc.Repository.csproj", "{9DF9F70B-5A5D-4DD2-B011-55BA362521D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KjNet.SqlDoc.Repository", "KjNet.SqlDoc.Repository\KjNet.SqlDoc.Repository.csproj", "{9DF9F70B-5A5D-4DD2-B011-55BA362521D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KjNet.SqlDoc.Application", "KjNet.SqlDoc.Application\KjNet.SqlDoc.Application.csproj", "{9543AF84-0085-4F95-B1C0-DEAD2DE81830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KjNet.SqlDoc.Application", "KjNet.SqlDoc.Application\KjNet.SqlDoc.Application.csproj", "{9543AF84-0085-4F95-B1C0-DEAD2DE81830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KjNet.SqlDoc.Domain", "KjNet.SqlDoc.Domain\KjNet.SqlDoc.Domain.csproj", "{A84A0D9B-39E5-461A-87C0-DB41D75248EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KjNet.SqlDoc.Domain", "KjNet.SqlDoc.Domain\KjNet.SqlDoc.Domain.csproj", "{A84A0D9B-39E5-461A-87C0-DB41D75248EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KjNet.SqlDoc.Trans", "KjNet.SqlDoc.Trans\KjNet.SqlDoc.Trans.csproj", "{B17114E6-71C0-4443-9E57-C77610B5A017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KjNet.SqlDoc.Trans", "KjNet.SqlDoc.Trans\KjNet.SqlDoc.Trans.csproj", "{B17114E6-71C0-4443-9E57-C77610B5A017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CML.MQ", "CML.MQ\CML.MQ.csproj", "{A3AB6AD1-98E2-4289-A4CF-AE0E970ECA6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03BA8726-F62C-4D74-AC96-6F10A0AF626A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03BA8726-F62C-4D74-AC96-6F10A0AF626A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03BA8726-F62C-4D74-AC96-6F10A0AF626A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03BA8726-F62C-4D74-AC96-6F10A0AF626A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5083041E-6654-4A1A-9F1F-9A87806598CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5083041E-6654-4A1A-9F1F-9A87806598CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5083041E-6654-4A1A-9F1F-9A87806598CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -83,6 +79,10 @@ Global
 		{B17114E6-71C0-4443-9E57-C77610B5A017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17114E6-71C0-4443-9E57-C77610B5A017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B17114E6-71C0-4443-9E57-C77610B5A017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AB6AD1-98E2-4289-A4CF-AE0E970ECA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AB6AD1-98E2-4289-A4CF-AE0E970ECA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AB6AD1-98E2-4289-A4CF-AE0E970ECA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AB6AD1-98E2-4289-A4CF-AE0E970ECA6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
