@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <StartupObject>CML.MQ.Subscribe.Test.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CML.MQ\CML.MQ.csproj" />
+    <ProjectReference Include="..\CML.NetCore.Infrastructure\CML.Lib.csproj" />
+  </ItemGroup>
+
+</Project>

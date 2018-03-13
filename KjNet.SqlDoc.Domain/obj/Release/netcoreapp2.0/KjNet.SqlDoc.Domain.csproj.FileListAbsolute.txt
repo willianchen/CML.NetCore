@@ -1,9 +1,0 @@
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\bin\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.deps.json
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\bin\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.dll
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\bin\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.pdb
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.csprojResolveAssemblyReference.cache
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.csproj.CoreCompileInputs.cache
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.AssemblyInfoInputs.cache
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.AssemblyInfo.cs
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.dll
-D:\GitWorkSpace\CML.NetCore\KjNet.SqlDoc.Domain\obj\Release\netcoreapp2.0\KjNet.SqlDoc.Domain.pdb

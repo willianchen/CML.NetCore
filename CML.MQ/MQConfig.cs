@@ -50,7 +50,7 @@ namespace CML.MQ
 
         public override string ToString()
         {
-            return $"{HostName}:{VirtualHost}:{UserName}";
+            return $"{HostName}_{VirtualHost}_{UserName}";
         }
     }
 }

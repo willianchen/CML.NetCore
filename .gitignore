@@ -10,3 +10,15 @@
 /CML.NetCore.Infrastructure/obj
 /NewCoreWeb/obj
 /NewCoreWeb/bin
+/CML.MQ/bin
+/CML.MQ/obj
+/CML.Lib.Test/obj
+/CML.Lib.Test/bin
+/KjNet.SqlDoc.Web/bin
+/KjNet.SqlDoc.Web/obj
+/KjNet.SqlDoc.Repository/obj
+/KjNet.SqlDoc.Repository/bin
+/KjNet.SqlDoc.Application/obj
+/KjNet.SqlDoc.Application/bin
+/KjNet.SqlDoc.Domain/bin
+/KjNet.SqlDoc.Domain/obj
