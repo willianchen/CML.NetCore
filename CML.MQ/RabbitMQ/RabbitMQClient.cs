@@ -154,7 +154,7 @@ namespace CML.MQ.RabbitMQ
         /// <param name="autoDelete">是否自动删除</param>
         /// <param name="exclusive">是否申明为排它队列</param>
         /// <param name="arguments">附加参数</param>
-        public void Publish<T>(T command, string exchangeName, string queueName, string routingKey, string exchangeType = "fanout", bool durable = true, bool autoDelete = false, bool exclusive = false, IDictionary<string, object> arguments = null)
+        public void Publish<T>(T command, string exchangeName, string queueName, string routingKey, string exchangeType = MQExchangeType.FANOUT, bool durable = true, bool autoDelete = false, bool exclusive = false, IDictionary<string, object> arguments = null)
         {
             CreateExchangeAndQueue(exchangeName, queueName, routingKey, exchangeType: exchangeType, durable: durable, exclusive: exclusive, autoDelete: autoDelete, arguments: arguments);
             var properties = Channel.CreateBasicProperties();
@@ -218,7 +218,7 @@ namespace CML.MQ.RabbitMQ
         /// <param name="errorActionHandle">错误处理方法</param>
         /// <param name="memberName">调用方法</param>
         /// <param name="loggerName">日志方法</param>
-        public void Pull<T>(Action<T> actionHandle, string exchangeName, string queueName, string routingKey, string exchangeType = "fanout", bool durable = true, bool autoDelete = false, bool exclusive = false, IDictionary<string, object> arguments = null, Action<T, Exception> errorActionHandle = null, string memberName = null, string loggerName = null)
+        public void Pull<T>(Action<T> actionHandle, string exchangeName, string queueName, string routingKey, string exchangeType = MQExchangeType.FANOUT, bool durable = true, bool autoDelete = false, bool exclusive = false, IDictionary<string, object> arguments = null, Action<T, Exception> errorActionHandle = null, string memberName = null, string loggerName = null)
         {
             CreateExchangeAndQueue(exchangeName, queueName, routingKey, exchangeType, durable, exclusive, autoDelete, arguments, isConsumer: true);
             var result = Channel.BasicGet(queueName, false);

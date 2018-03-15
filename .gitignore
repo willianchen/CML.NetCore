@@ -22,3 +22,10 @@
 /KjNet.SqlDoc.Application/bin
 /KjNet.SqlDoc.Domain/bin
 /KjNet.SqlDoc.Domain/obj
+/.vs
+/CML.MQ.Test/bin
+/CML.MQ.Test/obj
+/CML.MQ.Pull.Test/bin
+/CML.MQ.Pull.Test/obj
+/CML.MQ.Subscribe.Test/bin
+/CML.MQ.Subscribe.Test/obj

@@ -1,0 +1,17 @@
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\CML.Redis.deps.json
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\CML.Redis.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\CML.Redis.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Redis\obj\Debug\netcoreapp2.0\CML.Redis.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\StackExchange.Redis.StrongName.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\CML.Lib.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\StackExchange.Redis.StrongName.xml
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.xml
+D:\GitWorkSpace\CML.NetCore\CML.Redis\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.xml

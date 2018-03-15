@@ -11,11 +11,12 @@ namespace CML.MQ
     /// </summary>
     public class MQConfig
     {
-        public MQConfig(string hostName, string userName, string password)
+        public MQConfig(string hostName, string userName, string password, string virtualHost = "/")
         {
             HostName = hostName;
             Password = password;
             UserName = userName;
+            VirtualHost = virtualHost;
         }
 
         /// <summary>
