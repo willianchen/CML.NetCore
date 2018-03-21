@@ -29,3 +29,5 @@
 /CML.MQ.Pull.Test/obj
 /CML.MQ.Subscribe.Test/bin
 /CML.MQ.Subscribe.Test/obj
+/CML.Redis/bin
+/CML.Redis/obj

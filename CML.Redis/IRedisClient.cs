@@ -718,5 +718,24 @@ namespace CML.Redis
         Task<bool> LockReleaseAsync<T>(string key, T value);
 
         #endregion lock
+
+        #region Public
+
+        /// <summary>
+        /// 清除key
+        /// </summary>
+        void FlushDb();
+
+        /// <summary>
+        /// 清除key
+        /// </summary>
+        Task FlushDbAsync();
+
+        /// <summary>
+        /// 清除当前db的所有数据
+        /// </summary>
+        void Clear();
+
+        #endregion Public
     }
 }

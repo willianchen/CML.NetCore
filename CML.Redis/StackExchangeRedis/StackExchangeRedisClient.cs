@@ -53,6 +53,7 @@ namespace CML.Redis.StackExchangeRedis
             return _redisConfig.Prefix.IsNullOrEmptyWhiteSpace() ? key : $"{_redisConfig.Prefix}{_redisConfig.NamespaceSplitSymbol}{key}";
         }
 
+
         #region Hash
 
         /// <summary>
@@ -1100,6 +1101,18 @@ namespace CML.Redis.StackExchangeRedis
 
         #region Public
 
+        /// <summary>
+        /// 清除key
+        /// </summary>
+        public void FlushDb()
+        {
+            var endPoints = Database.Multiplexer.GetEndPoints();
+
+            foreach (var endpoint in endPoints)
+            {
+                Database.Multiplexer.GetServer(endpoint).FlushDatabase(Database.Database);
+            }
+        }
 
         /// <summary>
         /// 清除key
