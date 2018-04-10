@@ -1,0 +1,17 @@
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\CML.Web.Api.deps.json
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\CML.Web.Api.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\CML.Web.Api.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\CML.Lib.pdb
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.xml
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.xml
+D:\GitWorkSpace\CML.NetCore\CML.Api\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.xml
+D:\GitWorkSpace\CML.NetCore\CML.Api\obj\Debug\netcoreapp2.0\CML.Web.Api.csprojResolveAssemblyReference.cache

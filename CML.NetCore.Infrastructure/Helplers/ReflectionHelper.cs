@@ -340,5 +340,19 @@ namespace CML.Lib.Utils
                 .Where(t => t.EndsWith(".exe") || t.EndsWith(".dll"))
                 .Select(path => Assembly.Load(new AssemblyName(path))).ToList();
         }
+
+        /// <summary>
+        /// 获取类成员和成员类型的Attribute集合
+        /// </summary>
+        /// <param name="memberInfo">MemberInfo</param>
+        /// <param name="type">Type</param>
+        /// <param name="inherit">Inherit attribute from base classes</param>
+        public static List<object> GetAttributesOfMemberAndType(MemberInfo memberInfo, Type type, bool inherit = true)
+        {
+            var attributeList = new List<object>();
+            attributeList.AddRange(memberInfo.GetCustomAttributes(inherit));
+            attributeList.AddRange(type.GetTypeInfo().GetCustomAttributes(inherit));
+            return attributeList;
+        }
     }
 }

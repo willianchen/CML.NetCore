@@ -22,3 +22,5 @@ D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\CML.Data
 D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\nlog.config
 D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll
 D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.xml
+D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.dll
+D:\GitWorkSpace\CML.NetCore\CML.DataAccess.Test\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.xml

@@ -21,19 +21,18 @@ namespace CML.Redis.Test
     public class RedisLockTest : BaseTest
     {
         private int sum = 0;
-
+        RedisLock redisLock = new RedisLock("redisCache", new StackExchangeRedisProvider(), redisConfig);
         [TestMethod]
         public void TestLockAsync()
         {
 
-            RedisLock redisLock = new RedisLock("redisCache", new StackExchangeRedisProvider(), redisConfig);
-            for (var i = 0; i < 5000; i++)
+
+            for (var i = 0; i < 50000; i++)
             {
                 Task.Factory.StartNew(() =>
             {
-
                 var ret1 = Add();
-                Console.WriteLine("task1: " + ret1);
+                //  Console.WriteLine("task1: " + ret1);
 
             });
             }
@@ -58,10 +57,12 @@ namespace CML.Redis.Test
 
         public int Add()
         {
-            sum++;
-            Console.WriteLine("sum:" + sum);
-            return sum;
-
+            return redisLock.ExecuteWithLock("lock", "lock", TimeSpan.FromSeconds(100), () =>
+            {
+                sum++;
+                Console.WriteLine("sum:" + sum);
+                return sum;
+            });
         }
     }
 }

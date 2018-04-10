@@ -1,0 +1,15 @@
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.Test.deps.json
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.Test.runtimeconfig.json
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.Test.runtimeconfig.dev.json
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.Test.dll
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.Test.pdb
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.csprojResolveAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.dll
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\obj\Debug\netcoreapp2.0\CML.AspNetCore.Test.pdb
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.dll
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.Lib.dll
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.pdb
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.Lib.pdb

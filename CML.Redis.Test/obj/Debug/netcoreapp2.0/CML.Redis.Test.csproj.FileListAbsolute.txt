@@ -22,3 +22,5 @@ D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\CML.Redis.pdb
 D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Logging.Console.xml
 D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.xml
 D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\StackExchange.Redis.StrongName.xml
+D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.dll
+D:\GitWorkSpace\CML.NetCore\CML.Redis.Test\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Authorization.xml
