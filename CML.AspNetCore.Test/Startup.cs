@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
 using CML.AspNetCore.Authorization;
+using CML.AspNetCore.Extensions;
 using CML.Lib.Authorization;
 using CML.Lib.Dependency;
 using Microsoft.AspNetCore.Builder;
@@ -60,6 +61,7 @@ namespace CML.AspNetCore.Test
             }
 
             app.UseMvc();
+            app.UseErrorLog();
         }
     }
 }

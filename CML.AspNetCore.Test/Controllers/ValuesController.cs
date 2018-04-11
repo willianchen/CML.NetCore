@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CML.AspNetCore.Authorization;
+using CML.AspNetCore.Filters;
+using CML.AspNetCore.Test.Model;
+using CML.Lib;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CML.AspNetCore.Test.Controllers
@@ -12,18 +15,21 @@ namespace CML.AspNetCore.Test.Controllers
     {
         // GET api/values
         [HttpGet]
+        [ApiAuthorize("TEST")]
         public IEnumerable<string> Get()
         {
+            throw new BizException("测试异常捕获");
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
         [ApiAuthorize("TEST")]
-        public string Get(int id)
+        [ModelState]
+        public string Get(DemoModel model)
         {
             return "value";
         }
+
 
         // POST api/values
         [HttpPost]

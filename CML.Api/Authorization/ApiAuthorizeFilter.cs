@@ -63,9 +63,6 @@ namespace CML.AspNetCore.Authorization
                     var isLogin = await _authorizationHelper.CheckLoginAsync();
 
                     var errorInfo = ExceptionConvertUtil.Convert(ex);
-                        //SingletonDependency<ExceptionErrorInfoConverter>.Instance.Convert(ex);
-                        // context.Result = new ObjectResult(new AjaxResponse(errorInfo));
-
                     context.Result = new ObjectResult(new AjaxResponse(errorInfo))
                     {
                         StatusCode = isLogin ? (int)System.Net.HttpStatusCode.Forbidden : (int)System.Net.HttpStatusCode.Unauthorized

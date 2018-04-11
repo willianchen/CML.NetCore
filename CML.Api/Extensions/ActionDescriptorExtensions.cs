@@ -1,10 +1,7 @@
 ﻿using CML.Lib;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Controllers;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace CML.AspNetCore.Extensions
 {
@@ -15,7 +12,7 @@ namespace CML.AspNetCore.Extensions
     /// 类功能描述：ActionDescriptorExtensions
     /// 创建标识：cml 2018/4/8 14:28:30
     /// </summary>
-    public static class ActionDescriptorExtensions
+    public static partial class Extensions
     {
         public static ControllerActionDescriptor AsControllerActionDescriptor(this ActionDescriptor actionDescriptor)
         {

@@ -18,7 +18,7 @@ namespace CML.Lib.Authorization
         {
             var result = false;
             foreach (var p in permissionName)
-                result = p == "Test";
+                result = p == "TEST";
             return Task.FromResult(result);
         }
 

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a39688961c9b1a56906c649518724940cfddfc0a"
+    "signature": "66cda0bb68fa54373665b8b63351b43f6274f62a"
   },
   "compilationOptions": {
     "defines": [
@@ -33,6 +33,48 @@
         },
         "compile": {
           "CML.AspNetCore.Test.dll": {}
+        }
+      },
+      "AspectCore.Abstractions/0.3.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/AspectCore.Abstractions.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/AspectCore.Abstractions.dll": {}
+        }
+      },
+      "AspectCore.Core/0.3.1": {
+        "dependencies": {
+          "AspectCore.Abstractions": "0.3.1",
+          "AspectCore.Extensions.Reflection": "0.3.1",
+          "NETStandard.Library": "2.0.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/AspectCore.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/AspectCore.Core.dll": {}
+        }
+      },
+      "AspectCore.Extensions.Reflection/0.3.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/AspectCore.Extensions.Reflection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/AspectCore.Extensions.Reflection.dll": {}
         }
       },
       "Autofac/4.6.2": {
@@ -4352,6 +4394,7 @@
       },
       "CML.Lib/1.0.0": {
         "dependencies": {
+          "AspectCore.Core": "0.3.1",
           "AutoMapper": "6.2.0",
           "Autofac": "4.6.2",
           "Autofac.Extensions.DependencyInjection": "4.2.0",
@@ -4557,6 +4600,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspectCore.Abstractions/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IToG2+nb81BpIVQm5/9Tp0puoDZ4nnZZtqhx0Qu5WkVEtETi6Tgw5z0Rj8B8RzjgfhKE4XbZ4kbcHcheOdjIPg==",
+      "path": "aspectcore.abstractions/0.3.1",
+      "hashPath": "aspectcore.abstractions.0.3.1.nupkg.sha512"
+    },
+    "AspectCore.Core/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mmA47FOdmU49AtO2m+eXeXHehXCDkn/pBtOxT4p4ZAJ7PPN8cMGFx27a43EDDr68ntF43ugCr7uafexYZU2PYA==",
+      "path": "aspectcore.core/0.3.1",
+      "hashPath": "aspectcore.core.0.3.1.nupkg.sha512"
+    },
+    "AspectCore.Extensions.Reflection/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g0f+bRwKXzvprRkiyaH2gMYVsiKVFlUkpD+vMADixtvfhz52zpbv/GqLtWPHyvJhWVSXeCwrNaLS8SF8tJbZPQ==",
+      "path": "aspectcore.extensions.reflection/0.3.1",
+      "hashPath": "aspectcore.extensions.reflection.0.3.1.nupkg.sha512"
     },
     "Autofac/4.6.2": {
       "type": "package",

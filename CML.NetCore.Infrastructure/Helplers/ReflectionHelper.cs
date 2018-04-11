@@ -351,7 +351,7 @@ namespace CML.Lib.Utils
         {
             var attributeList = new List<object>();
             attributeList.AddRange(memberInfo.GetCustomAttributes(inherit));
-            attributeList.AddRange(type.GetTypeInfo().GetCustomAttributes(inherit));
+         //   attributeList.AddRange(type.GetTypeInfo().GetCustomAttributes(inherit));
             return attributeList;
         }
     }

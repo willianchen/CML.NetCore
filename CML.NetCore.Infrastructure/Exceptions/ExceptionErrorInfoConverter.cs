@@ -83,7 +83,7 @@ namespace CML.Lib.Exceptions
                 return new ErrorInfo(authorizationException.Message);
             }
 
-            return new ErrorInfo("InternalServerError");
+            return new ErrorInfo("InternalServerError：" + exception.Message);
         }
 
         private ErrorInfo CreateDetailedErrorInfoFromException(Exception exception)
