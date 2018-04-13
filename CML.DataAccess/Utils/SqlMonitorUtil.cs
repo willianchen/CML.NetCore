@@ -16,7 +16,7 @@ namespace CML.DataAccess.Utils
     /// </summary>
     internal static class SqlMonitorUtil
     {
-        static readonly IInternalLogger LogUtil = InternalLoggerFactory.GetInstance(typeof(SqlMonitorUtil));
+        static readonly ILog LogUtil = LogFactory.GetInstance(typeof(SqlMonitorUtil));
         #region 监控消耗时间
 
         /// <summary>

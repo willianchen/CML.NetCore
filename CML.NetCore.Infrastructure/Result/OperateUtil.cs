@@ -17,7 +17,7 @@ namespace CML.Lib.Result
     /// </summary>
     public static class OperateUtil
     {
-        static readonly IInternalLogger LogUtil = InternalLoggerFactory.GetInstance(typeof(OperateUtil));
+        static readonly ILog LogUtil = LogFactory.GetInstance(typeof(OperateUtil));
 
         /// <summary>
         /// 异常操作结果

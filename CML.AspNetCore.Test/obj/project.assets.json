@@ -33,6 +33,19 @@
           "lib/netstandard1.6/AspectCore.Core.dll": {}
         }
       },
+      "AspectCore.Extensions.DependencyInjection/0.3.1": {
+        "type": "package",
+        "dependencies": {
+          "AspectCore.Core": "0.3.1",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "AspectCore.Extensions.Reflection/0.3.1": {
         "type": "package",
         "dependencies": {
@@ -5420,6 +5433,16 @@
         "aspectcore.core.nuspec",
         "lib/net45/AspectCore.Core.dll",
         "lib/netstandard1.6/AspectCore.Core.dll"
+      ]
+    },
+    "AspectCore.Extensions.DependencyInjection/0.3.1": {
+      "sha512": "ROFFP1CQMWDrtychg9CRi4/bM+8RQJI6ZHRqvT9UMD8hmfdjTFVh4kTwm+qBKrVY4NzuCFewIJZzV4HTuTwyWg==",
+      "type": "package",
+      "path": "aspectcore.extensions.dependencyinjection/0.3.1",
+      "files": [
+        "aspectcore.extensions.dependencyinjection.0.3.1.nupkg.sha512",
+        "aspectcore.extensions.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll"
       ]
     },
     "AspectCore.Extensions.Reflection/0.3.1": {
@@ -13870,6 +13893,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "AspectCore.Core >= 0.3.1",
+      "AspectCore.Extensions.DependencyInjection >= 0.3.1",
       "CML.AspNetCore >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13926,6 +13951,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "AspectCore.Core": {
+            "target": "Package",
+            "version": "[0.3.1, )"
+          },
+          "AspectCore.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[0.3.1, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.6, )"

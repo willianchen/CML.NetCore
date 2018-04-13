@@ -15,13 +15,13 @@ namespace CML.Lib.Utils
     /// </summary>
     public static class LogUtil
     {
-        private static IInternalLogger GetLogger(string loggerName = null)
+        private static ILog GetLogger(string loggerName = null)
         {
             if (string.IsNullOrWhiteSpace(loggerName))
             {
                 loggerName = "Public.*";
             }
-            return InternalLoggerFactory.GetInstance(loggerName);
+            return LogFactory.GetInstance(loggerName);
         }
 
 

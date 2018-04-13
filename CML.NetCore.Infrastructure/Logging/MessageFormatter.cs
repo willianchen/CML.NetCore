@@ -101,10 +101,5 @@ namespace CML.Lib.Logging
                 return new FormattingTuple(sbuf.ToString(), argArray, null);
             }
         }
-
-
-    
-
-
     }
 }

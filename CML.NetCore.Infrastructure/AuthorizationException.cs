@@ -20,14 +20,14 @@ namespace CML.Lib
         /// LogLever of the exception.
         /// Default: Warn.
         /// </summary>
-        public InternalLogLevel LogLevel { get; set; }
+        public LogLevel LogLevel { get; set; }
 
         /// <summary>
         /// Creates a new <see cref="AuthorizationException"/> object.
         /// </summary>
         public AuthorizationException()
         {
-            LogLevel = InternalLogLevel.WARN ;
+            LogLevel = LogLevel.WARN ;
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace CML.Lib
         public AuthorizationException(string message)
             : base(message)
         {
-            LogLevel = InternalLogLevel.WARN;
+            LogLevel = LogLevel.WARN;
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace CML.Lib
         public AuthorizationException(string message, Exception innerException)
             : base(message, innerException)
         {
-            LogLevel = InternalLogLevel.WARN;
+            LogLevel = LogLevel.WARN;
         }
     }
 }

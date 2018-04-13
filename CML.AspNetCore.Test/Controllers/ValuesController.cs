@@ -6,6 +6,7 @@ using CML.AspNetCore.Authorization;
 using CML.AspNetCore.Filters;
 using CML.AspNetCore.Test.Model;
 using CML.Lib;
+using CML.Lib.Logging.Aspect;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CML.AspNetCore.Test.Controllers
@@ -16,20 +17,25 @@ namespace CML.AspNetCore.Test.Controllers
         // GET api/values
         [HttpGet]
         [ApiAuthorize("TEST")]
+        [DebugLog]
         public IEnumerable<string> Get()
         {
-            throw new BizException("测试异常捕获");
+            //throw new BizException("测试异常捕获");
             return new string[] { "value1", "value2" };
         }
 
         [HttpGet("{id}")]
         [ApiAuthorize("TEST")]
         [ModelState]
+        [DebugLog]
         public string Get(DemoModel model)
         {
             return "value";
         }
-
+        public string GetInde(int id)
+        {
+            return "value";
+        }
 
         // POST api/values
         [HttpPost]

@@ -3,6 +3,7 @@ using CML.Lib.Dependency;
 using CML.Lib.Domains.Entities;
 using CML.Lib.Exceptions;
 using CML.Lib.Result;
+using CML.Lib.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -28,6 +29,7 @@ namespace CML.AspNetCore.Filters
         {
             context.ExceptionHandled = true;
             context.HttpContext.Response.StatusCode = GetStatusCode(context);
+            LogUtil.Error(context.Exception);
             var errorInfo = ExceptionConvertUtil.Convert(context.Exception);
             context.Result = new ObjectResult(new AjaxResponse(errorInfo));
         }

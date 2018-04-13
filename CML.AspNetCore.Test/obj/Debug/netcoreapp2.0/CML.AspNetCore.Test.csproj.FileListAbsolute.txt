@@ -13,3 +13,4 @@ D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspN
 D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.Lib.dll
 D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.AspNetCore.pdb
 D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\CML.Lib.pdb
+D:\GitWorkSpace\CML.NetCore\CML.AspNetCore.Test\bin\Debug\netcoreapp2.0\nlog.config

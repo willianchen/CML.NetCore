@@ -11,7 +11,7 @@ namespace CML.Lib.Logging
     /// 类功能描述：日志等级
     /// 创建标识：cml 2018/1/22 14:35:04
     /// </summary>
-    public enum InternalLogLevel
+    public enum LogLevel
     {
         /// <summary>
         ///     'TRACE' log level.

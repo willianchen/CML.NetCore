@@ -39,7 +39,7 @@ namespace CML.Lib.Configurations
             }
         }
         public static IConfigurationRoot Configuration { get; }
-        public static void SetConsoleLogger() => InternalLoggerFactory.DefaultFactory.AddProvider(new ConsoleLoggerProvider((s, level) => true, false));
+        public static void SetConsoleLogger() => LogFactory.DefaultFactory.AddProvider(new ConsoleLoggerProvider((s, level) => true, false));
 
 
         /// <summary>

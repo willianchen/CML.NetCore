@@ -36,52 +36,52 @@ namespace CML.Lib.Logging
             return NLog.LogManager.GetLogger(logName);
         }
 
-        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
+        public void Log<TState>(Microsoft.Extensions.Logging.LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             switch (logLevel)
             {
-                case LogLevel.Trace:
+                case Microsoft.Extensions.Logging.LogLevel.Trace:
                     _logger.Trace(formatter(state, exception), exception);
                     break;
-                case LogLevel.Debug:
+                case Microsoft.Extensions.Logging.LogLevel.Debug:
                     _logger.Debug(exception, formatter(state, exception));
                     break;
-                case LogLevel.Information:
+                case Microsoft.Extensions.Logging.LogLevel.Information:
                     _logger.Info(exception, formatter(state, exception));
                     break;
-                case LogLevel.Warning:
+                case Microsoft.Extensions.Logging.LogLevel.Warning:
                     _logger.Warn(exception, formatter(state, exception));
                     break;
-                case LogLevel.Error:
+                case Microsoft.Extensions.Logging.LogLevel.Error:
                     _logger.Error(exception, formatter(state, exception));
                     break;
-                case LogLevel.Critical:
+                case Microsoft.Extensions.Logging.LogLevel.Critical:
                     _logger.Error(exception, formatter(state, exception));
                     break;
-                case LogLevel.None:
+                case Microsoft.Extensions.Logging.LogLevel.None:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(logLevel), logLevel, null);
             }
         }
 
-        public bool IsEnabled(LogLevel logLevel)
+        public bool IsEnabled(Microsoft.Extensions.Logging.LogLevel logLevel)
         {
             switch (logLevel)
             {
-                case LogLevel.Trace:
+                case Microsoft.Extensions.Logging.LogLevel.Trace:
                     return _logger.IsTraceEnabled;
-                case LogLevel.Debug:
+                case Microsoft.Extensions.Logging.LogLevel.Debug:
                     return _logger.IsDebugEnabled;
-                case LogLevel.Information:
+                case Microsoft.Extensions.Logging.LogLevel.Information:
                     return _logger.IsInfoEnabled;
-                case LogLevel.Warning:
+                case Microsoft.Extensions.Logging.LogLevel.Warning:
                     return _logger.IsWarnEnabled;
-                case LogLevel.Error:
+                case Microsoft.Extensions.Logging.LogLevel.Error:
                     return _logger.IsErrorEnabled;
-                case LogLevel.Critical:
+                case Microsoft.Extensions.Logging.LogLevel.Critical:
                     return _logger.IsErrorEnabled;
-                case LogLevel.None:
+                case Microsoft.Extensions.Logging.LogLevel.None:
                     return true;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(logLevel), logLevel, null);

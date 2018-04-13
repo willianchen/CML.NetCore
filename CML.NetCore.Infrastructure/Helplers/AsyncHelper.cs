@@ -16,7 +16,7 @@ namespace CML.Lib.Utils
     /// </summary>
     public static class AsyncHelper
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance(typeof(AsyncHelper));
+        static readonly ILog Logger = LogFactory.GetInstance(typeof(AsyncHelper));
 
         /// <summary>
         /// 执行

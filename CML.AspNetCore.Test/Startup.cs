@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AspectCore.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
@@ -41,6 +42,8 @@ namespace CML.AspNetCore.Test
                 options.Filters.Add(typeof(ApiAuthorizeFilter));
             }
             );
+          //  services.AddAspectCoreContainer();
+            services.AddDynamicProxy();
             var builder = new ContainerBuilder();
             //   builder.Populate(services);
             ContainerManager.UseAutofacContainer(builder)
@@ -62,6 +65,7 @@ namespace CML.AspNetCore.Test
 
             app.UseMvc();
             app.UseErrorLog();
+
         }
     }
 }

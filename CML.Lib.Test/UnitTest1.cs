@@ -9,7 +9,7 @@ namespace CML.Lib.Test
     [TestClass]
     public class UnitTest1
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance(typeof(UnitTest1));
+        static readonly ILog Logger = LogFactory.GetInstance(typeof(UnitTest1));
         [TestMethod]
 
         public void TestMethod1()

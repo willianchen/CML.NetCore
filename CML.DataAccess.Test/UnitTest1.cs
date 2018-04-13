@@ -10,7 +10,7 @@ namespace CML.DataAccess.Test
     [TestClass]
     public class UnitTest1
     {
-        static readonly IInternalLogger LogUtil = InternalLoggerFactory.GetInstance(typeof(UnitTest1));
+        static readonly ILog LogUtil = LogFactory.GetInstance(typeof(UnitTest1));
         [TestMethod]
         public void TestMethod1()
         {

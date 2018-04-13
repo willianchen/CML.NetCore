@@ -20,5 +20,7 @@ namespace CML.Lib.Logging
         public void Dispose()
         {
         }
+
+
     }
 }

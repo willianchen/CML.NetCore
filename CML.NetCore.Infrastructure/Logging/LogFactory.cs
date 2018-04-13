@@ -12,7 +12,7 @@ namespace CML.Lib.Logging
     /// 类功能描述：InternalLoggerFactory
     /// 创建标识：cml 2018/1/23 11:24:57
     /// </summary>
-    public static class InternalLoggerFactory
+    public static class LogFactory
     {
         static ILoggerFactory defaultFactory;
 
@@ -35,7 +35,7 @@ namespace CML.Lib.Logging
                 ILoggerFactory factory = Volatile.Read(ref defaultFactory);
                 if (factory == null)
                 {
-                    factory = NewDefaultFactory(typeof(InternalLoggerFactory).FullName);
+                    factory = NewDefaultFactory(typeof(LogFactory).FullName);
                     ILoggerFactory current = Interlocked.CompareExchange(ref defaultFactory, factory, null);
                     if (current != null)
                     {
@@ -57,20 +57,20 @@ namespace CML.Lib.Logging
         /// </summary>
         /// <typeparam name="T">type where logger is used</typeparam>
         /// <returns>logger instance</returns>
-        public static IInternalLogger GetInstance<T>() => GetInstance(typeof(T));
+        public static ILog GetInstance<T>() => GetInstance(typeof(T));
 
         /// <summary>
         ///     Creates a new logger instance with the name of the specified type.
         /// </summary>
         /// <param name="type">type where logger is used</param>
         /// <returns>logger instance</returns>
-        public static IInternalLogger GetInstance(Type type) => GetInstance(type.FullName);
+        public static ILog GetInstance(Type type) => GetInstance(type.FullName);
 
         /// <summary>
         ///     Creates a new logger instance with the specified name.
         /// </summary>
         /// <param name="name">logger name</param>
         /// <returns>logger instance</returns>
-        public static IInternalLogger GetInstance(string name) => new GenericLogger(name, DefaultFactory.CreateLogger(name));
+        public static ILog GetInstance(string name) => new GenericLogger(name, DefaultFactory.CreateLogger(name));
     }
 }
