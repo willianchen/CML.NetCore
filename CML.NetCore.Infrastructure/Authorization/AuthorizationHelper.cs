@@ -1,4 +1,5 @@
-﻿using CML.Lib.Utils;
+﻿using CML.Lib.Logging.Aspect;
+using CML.Lib.Utils;
 using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace CML.Lib.Authorization
             _loginChecker = loginChecker;
         }
 
+     
         public async Task AuthorizeAsync(IEnumerable<ICustomAuthorizeAttribute> authorizeAttributes)
         {
             if (!(await CheckLoginAsync()))

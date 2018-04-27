@@ -27,7 +27,7 @@ namespace CML.Lib.Logging.Extensions
         /// <param name="log">参数</param>
         public static void AppendTo(this Parameter parameter, StringBuilder builder)
         {
-            builder.AppendFormat($"参数类型：{parameter.ParameterInfo.ParameterType.FullName},参数名称：{ parameter.Name} 参数值：{GetParameterValue(parameter)}");
+            builder.AppendFormat($"参数类型：{parameter.ParameterInfo.ParameterType.FullName},参数名称：{ parameter.Name},参数值：{GetParameterValue(parameter)}");
         }
 
         /// <summary>

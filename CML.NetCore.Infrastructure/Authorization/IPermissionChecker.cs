@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CML.Lib.Logging.Aspect;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace CML.Lib.Authorization
     /// 类功能描述：权限认证接口
     /// 创建标识：cml 2018/4/2 16:52:49
     /// </summary>
+    [DebugLog]
     public interface IPermissionChecker
     {
         /// <summary>
@@ -19,6 +21,7 @@ namespace CML.Lib.Authorization
         /// </summary>
         /// <param name="permissionName"></param>
         /// <returns></returns>
+        [DebugLog]
         Task<bool> IsGrantedAsync(bool isRequireAllPermisions, string[] permissionName);
 
         /// <summary>
