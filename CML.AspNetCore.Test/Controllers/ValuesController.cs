@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CML.AspNetCore.Authorization;
 using CML.AspNetCore.Filters;
 using CML.AspNetCore.Test.Model;
+using CML.AspNetCore.Test.Trace;
 using CML.Lib;
 using CML.Lib.Logging.Aspect;
 using Microsoft.AspNetCore.Mvc;
@@ -17,25 +18,27 @@ namespace CML.AspNetCore.Test.Controllers
         // GET api/values
         [HttpGet]
         [ApiAuthorize("TEST")]
-        [DebugLog]
+        [RequestTrace]
         public IEnumerable<string> Get()
         {
             //throw new BizException("测试异常捕获");
+
             return new string[] { "value1", "value2" };
         }
 
         [HttpGet("{id}")]
         [ApiAuthorize("TEST")]
-        [ModelState]
+        //[ModelState]
         [DebugLog]
-        public string Get(DemoModel model)
+        public string Get(int id)
         {
+            return TraceTest.TestTrace(id.ToString());
             return "value";
         }
-        public string GetInde(int id)
-        {
-            return "value";
-        }
+        //public string GetInde(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST api/values
         [HttpPost]

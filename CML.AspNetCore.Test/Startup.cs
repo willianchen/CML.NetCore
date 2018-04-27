@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using AspectCore.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using AspectCore.Extensions.Autofac;
 
 namespace CML.AspNetCore.Test
 {
@@ -43,14 +44,18 @@ namespace CML.AspNetCore.Test
             }
             );
           //  services.AddAspectCoreContainer();
-            services.AddDynamicProxy();
+         //  services.AddDynamicProxy();
+          //  services.AddAspectCore();
+            IServiceProvider serviceProvider = services.BuildAspectCoreServiceProvider();
             var builder = new ContainerBuilder();
+       
             //   builder.Populate(services);
             ContainerManager.UseAutofacContainer(builder)
                 .RegisterType<IAuthorizationHelper, AuthorizationHelper>(lifeStyle: LifeStyle.PerLifetimeScope)
             .RegisterType<ILoginChecker, NullLoginChecker>(lifeStyle: LifeStyle.PerLifetimeScope)
             .RegisterType<IPermissionChecker, NullPermissionChecker>(lifeStyle: LifeStyle.PerLifetimeScope);
 
+            builder.RegisterDynamicProxy();
             //    var container = builder.Build();
             return ContainerManager.RegisterProvider(services);
         }
