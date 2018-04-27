@@ -31,3 +31,11 @@
 /CML.MQ.Subscribe.Test/obj
 /CML.Redis/bin
 /CML.Redis/obj
+/CML.Api/obj
+/CML.Api/bin
+/CML.AspNetCore.Test/bin
+/CML.AspNetCore.Test/obj
+/CML.DataAccess.Test/obj
+/CML.DataAccess.Test/bin
+/CML.Redis.Test/bin
+/CML.Redis.Test/obj
