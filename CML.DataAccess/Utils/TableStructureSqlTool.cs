@@ -103,7 +103,7 @@ namespace CML.DataAccess.Utils
             switch (databaseType)
             {
                 case DatabaseType.MSSQLServer:
-                    selectTableColumnSql = GetQuerySqlServerTableColumnListSql(tablePrefix: tablePrefix);
+                    selectTableColumnSql = GetQuerySqlServerTableColumnListSql( tablePrefix: tablePrefix);
                     break;
 
                 case DatabaseType.MySql:
@@ -166,7 +166,7 @@ namespace CML.DataAccess.Utils
 								AND ( systypes.name <> 'sysname' )  AND systypes.name<>'geometry' AND systypes.name<>'geography'";// AND Sysobjects.name='" + tableName + "'
             if (!string.IsNullOrWhiteSpace(tablePrefix))
             {
-                sql += string.Format(" AND Sysobjects.name like '{0}%'", tablePrefix);
+                sql += string.Format(" AND Sysobjects.name = '{0}'", tablePrefix);
             }
             sql += "  ORDER BY syscolumns.colid;";
             return sql;

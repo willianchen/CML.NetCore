@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>CML</Authors>
+    <Company>CML</Company>
+    <Product>CML</Product>
+    <Description>基于Dapper的数据操作类库
+支持MSSqlserver MySql多数据库切换
+</Description>
+    <Version>1.0.0.1</Version>
+    <PackageReleaseNotes>基于Dapper的数据操作类库
+支持MSSqlserver MySql多数据库切换</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\CML.DataAccess.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\CML.DataAccess.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

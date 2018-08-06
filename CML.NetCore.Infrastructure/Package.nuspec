@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CML.Lib</id>
+    <version>1.0.0</version>
+    <authors>CML</authors>
+    <owners>CML</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>dotnetcore Infrastructures donetcore基础操作类库</description>
+    <releaseNotes>dotnetcore Infrastructures donetcore基础操作类库.IOC.拦截器.日志.权限认证等一些基础类</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="\bin\Release\netstandard2.0\CML.Lib.dll" target="\bin\Release\netstandard2.0\CML.Lib.dll" />
+    <file src="\bin\Release\netstandard2.0\CML.Lib.xml" target="\bin\Release\netstandard2.0\CML.Lib.xml" />
+</files>
+</package>

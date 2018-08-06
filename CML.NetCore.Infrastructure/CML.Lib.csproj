@@ -4,6 +4,22 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>CML.Lib</RootNamespace>
     <AssemblyName>CML.Lib</AssemblyName>
+    <Description>dotnetcore Infrastructures donetcore基础操作类库.IOC.拦截器.日志.权限认证等一些基础类</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>CML</Authors>
+    <Company>CML</Company>
+    <Product>CML</Product>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <Version>1.0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\CML.Lib.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\CML.Lib.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +39,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="Nito.AsyncEx" Version="5.0.0-pre-05" />
     <PackageReference Include="NLog" Version="4.5.0-rc04" />
+    <PackageReference Include="RestSharp.NetCore" Version="105.2.4-rc4-24214-01" />
     <PackageReference Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.5.0-preview1-26216-02" />
   </ItemGroup>

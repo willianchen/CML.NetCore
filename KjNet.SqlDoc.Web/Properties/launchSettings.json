@@ -2,8 +2,12 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/KjNet.SqlDoc.Web",
+      "sslPort": 0
+    },
     "iisExpress": {
-      "applicationUrl": "http://localhost:5115/",
+      "applicationUrl": "http://localhost:51151/",
       "sslPort": 0
     }
   },
