@@ -1,0 +1,6 @@
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\bin\Debug\netstandard2.0\HttpApiClient.Core.deps.json
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\bin\Debug\netstandard2.0\HttpApiClient.Core.dll
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\obj\Debug\netstandard2.0\HttpApiClient.Core.csprojAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\obj\Debug\netstandard2.0\HttpApiClient.Core.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\obj\Debug\netstandard2.0\HttpApiClient.Core.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\HttpApiClient.Core\obj\Debug\netstandard2.0\HttpApiClient.Core.AssemblyInfo.cs

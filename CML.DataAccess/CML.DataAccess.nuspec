@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CML.DataAccess</id>
+    <version>1.0.0.0</version>
+    <title>CML.DataAccess</title>
+    <authors>CML</authors>
+    <owners>CML</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>基于Dapper的数据操作类库</description>
+    <releaseNotes>基于Dapper的数据操作类库 支持MSSqlserver MySql多数据库切换</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags></tags>
+  </metadata>
+   <files>
+    <file src="D:\GitWorkSpace\CML.NetCore\CML.DataAccess\bin\Release\netstandard2.0\CML.DataAccess.dll" target="\bin\Release\netstandard2.0\CML.DataAccess.dll" />
+    <file src="D:\GitWorkSpace\CML.NetCore\CML.DataAccess\bin\Release\netstandard2.0\CML.DataAccess.xml" target="\bin\Release\netstandard2.0\CML.DataAccess.xml" />
+</files>
+</package>
