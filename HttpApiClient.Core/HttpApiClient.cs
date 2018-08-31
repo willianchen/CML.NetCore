@@ -1,4 +1,5 @@
-﻿using HttpApiClient.Core.Http;
+﻿using HttpApiClient.Core.Defaults;
+using HttpApiClient.Core.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
