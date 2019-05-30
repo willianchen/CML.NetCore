@@ -39,7 +39,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "FQHcdqbhjbehRy/H8+T8IfatmUetJdTMKc0FUoxxwy7G0YCN3Mnvg+j1CfZsGWVtXcKKH+lix2H3uUtdj4k1PQ==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -179,10 +179,11 @@
       ]
     },
     "RestSharp/106.3.1": {
-      "sha512": "TmlN7SXjK52zzpQDTuzw7IH3XQ2Svtss/4zvQBKIgf74QIVxvlxoAqQYu1EhNQ1bMSBIQ4aK120BO7W+v8/kiQ==",
+      "sha512": "CFaes/aW50HUI2hOVG8O7jtvI/pW+UMWp6aG1ZoFYaeVTs4m3ku4Fma++AADI5SrFOSsJd71PsGIf8FBhbGUVA==",
       "type": "package",
       "path": "restsharp/106.3.1",
       "files": [
+        ".signature.p7s",
         "lib/net452/RestSharp.dll",
         "lib/netstandard2.0/RestSharp.dll",
         "restsharp.106.3.1.nupkg.sha512",
@@ -221,8 +222,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://192.168.100.134:8087/nuget": {},
         "http://192.168.100.134:8089/nuget": {},
-        "http://192.168.100.174:8091/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

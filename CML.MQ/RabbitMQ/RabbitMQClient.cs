@@ -128,6 +128,7 @@ namespace CML.MQ.RabbitMQ
         /// <param name="routingKey">路由关键字</param>
         public void Publish<T>(T command, string routingKey = null)
         {
+
             var mqAttribute = MQAttribute.GetMQAttribute<T>();
             if (routingKey.IsNotNullAndNotEmptyWhiteSpace())
             {
@@ -136,8 +137,16 @@ namespace CML.MQ.RabbitMQ
             CreateExchangeAndQueue(mqAttribute);
             var properties = Channel.CreateBasicProperties();
             properties.Persistent = true;
-
+            properties.DeliveryMode = 2;
+            // Channel.c
             Channel.BasicPublish(mqAttribute.ExchangeName, mqAttribute.RoutingKey, properties, command.ToJson().ToBytes());
+            Channel.ConfirmSelect();
+            Channel.BasicAcks += (model, ea) =>
+           {
+               LogUtil.Debug($"消息发送成功:{ea.DeliveryTag}{ea.Multiple}");
+           };
+            //Channel.
+            //Channel.WaitForConfirms
 
         }
 

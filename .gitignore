@@ -39,3 +39,5 @@
 /CML.DataAccess.Test/bin
 /CML.Redis.Test/bin
 /CML.Redis.Test/obj
+/CML.Consul/bin/Debug/netcoreapp2.1
+/CML.Consul/obj

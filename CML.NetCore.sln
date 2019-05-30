@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.AspNetCore", "CML.Api\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CML.AspNetCore.Test", "CML.AspNetCore.Test\CML.AspNetCore.Test.csproj", "{870D6A16-A398-4D4E-8D96-0C273AA27584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpApiClient.Core", "HttpApiClient.Core\HttpApiClient.Core.csproj", "{50299FDC-D818-446B-AB4B-02E3599066B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpApiClient.Core", "HttpApiClient.Core\HttpApiClient.Core.csproj", "{50299FDC-D818-446B-AB4B-02E3599066B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CML.Consul", "CML.Consul\CML.Consul.csproj", "{AFF966E4-3E21-4ADD-A41A-E1B40415F40C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{50299FDC-D818-446B-AB4B-02E3599066B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50299FDC-D818-446B-AB4B-02E3599066B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50299FDC-D818-446B-AB4B-02E3599066B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF966E4-3E21-4ADD-A41A-E1B40415F40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF966E4-3E21-4ADD-A41A-E1B40415F40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF966E4-3E21-4ADD-A41A-E1B40415F40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF966E4-3E21-4ADD-A41A-E1B40415F40C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

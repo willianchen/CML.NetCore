@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using CML.DataAccess.Attributes;
 using CML.DataAccess.DbClient;
 using CML.DataAccess.Utils;
 using CML.Lib.Domains;
@@ -29,19 +31,57 @@ namespace CML.DataAccess.Repositories
         /// .ctor
         /// </summary>
         /// <param name="dataAccessFactory"></param>
+        /// <param name="configName"></param>
+        public BaseDataRepository(IDataAccessFactory dataAccessFactory, string configName = "Main") : this(dataAccessFactory, "", configName)
+        {
+
+        }
+
+        /// <summary>
+        /// .ctor
+        /// </summary>
+        /// <param name="dataAccessFactory"></param>
         /// <param name="tableName"></param>
         /// <param name="configName"></param>
         public BaseDataRepository(IDataAccessFactory dataAccessFactory, string tableName, string configName)
         {
+
             _dataAccessFactory = dataAccessFactory;
             _tableName = tableName;
             _configName = configName;
+            var tbNameAttr = GetTableName();
+            if (!string.IsNullOrWhiteSpace(tbNameAttr))
+            {
+                _tableName = tbNameAttr;
+            }
             var dataProperty = DBSettings.GetDatabaseProperty(ConfigName);
             if (dataProperty != null)
             {
                 _readDateType = dataProperty.Reader.DatabaseType;
                 _writerDataType = dataProperty.Writer.DatabaseType;
             }
+        }
+        /// <summary>
+        /// 获取表名
+        /// </summary>
+        /// <returns></returns>
+        private string GetTableName()
+        {
+            Type type = typeof(T);
+            string tableName = string.Empty;    //数据库名
+            var sd = type.GetCustomAttributes(true);
+            for (int i = 0; i < sd.Count(); i++)
+            {
+                if (sd.GetValue(i).GetType().Name == "TableName")
+                {
+                    TableNameAttribute tableNameTmp = sd[i] as TableNameAttribute;
+                    if (tableNameTmp != null)
+                    {
+                        tableName = tableNameTmp.TableName;
+                    }
+                }
+            }
+            return tableName;
         }
 
         /// <summary>
@@ -243,7 +283,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public TDto GetDto<TDto>(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName,dbType: WriterDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, dbType: WriterDataType);
             return GetDataAccess().ExecuteScalar<TDto>(query);
         }
 
@@ -297,7 +337,7 @@ namespace CML.DataAccess.Repositories
         /// <returns></returns>
         public T GetInfo(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
-            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName,  topCount: 1, dbType: ReaderDataType);
+            SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, topCount: 1, dbType: ReaderDataType);
             return GetDataAccess().ExecuteScalar<T>(query);
         }
 

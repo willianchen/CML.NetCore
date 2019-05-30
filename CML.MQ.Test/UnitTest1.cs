@@ -13,7 +13,7 @@ namespace CML.MQ.Test
         {
             MQConfig config = new MQConfig("localhost", "guest", "guest") { VirtualHost = "/" };
             RabbitMQClient client = new RabbitMQClient(config);
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10; i++)
             {
                 MqModel message = new MqModel() { Message = "test message" + i.ToString(), SendDate = DateTime.Now };
                 client.Publish(message);
@@ -22,7 +22,7 @@ namespace CML.MQ.Test
         }
     }
 
-    [MQ(QueueName = "QueueName", ExchangeName = "ExchangeName", RoutingKey = "RoutingKey")]
+    [MQ(QueueName = "demo.queue", ExchangeName = "demo.exchange", RoutingKey = "demo.route")]
     public class MqModel
     {
         public string Message { get; set; }

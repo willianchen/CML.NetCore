@@ -33,7 +33,7 @@ namespace CML.MQ
         /// <summary>
         /// 交换机类型
         /// </summary>
-        public string ExchangeType { get; set; } = MQExchangeType.FANOUT;
+        public string ExchangeType { get; set; } = MQExchangeType.DIRECT;
 
         /// <summary>
         /// 是否持久化
