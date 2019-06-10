@@ -72,7 +72,7 @@ namespace CML.DataAccess.Repositories
             var sd = type.GetCustomAttributes(true);
             for (int i = 0; i < sd.Count(); i++)
             {
-                if (sd.GetValue(i).GetType().Name == "TableName")
+                if (sd.GetValue(i).GetType().Name == "TableNameAttribute")
                 {
                     TableNameAttribute tableNameTmp = sd[i] as TableNameAttribute;
                     if (tableNameTmp != null)
@@ -270,7 +270,7 @@ namespace CML.DataAccess.Repositories
         public TDto GetDto<TDto>(object condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<TDto>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
-            return GetDataAccess().ExecuteScalar<TDto>(query);
+            return GetDataAccess().QuerySingleOrDefault<TDto>(query);
         }
 
         /// <summary>
@@ -284,7 +284,7 @@ namespace CML.DataAccess.Repositories
         public TDto GetDto<TDto>(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, dbType: WriterDataType);
-            return GetDataAccess().ExecuteScalar<TDto>(query);
+            return GetDataAccess().QuerySingleOrDefault<TDto>(query);
         }
 
         /// <summary>
@@ -298,7 +298,7 @@ namespace CML.DataAccess.Repositories
         public Task<TDto> GetDtoAsync<TDto>(object condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<TDto>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
-            return GetDataAccess().ExecuteScalarAsync<TDto>(query);
+            return GetDataAccess().QuerySingleOrDefaultAsync<TDto>(query);
         }
 
         /// <summary>
@@ -312,7 +312,7 @@ namespace CML.DataAccess.Repositories
         public Task<TDto> GetDtoAsync<TDto>(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, topCount: 1, dbType: ReaderDataType);
-            return GetDataAccess().ExecuteScalarAsync<TDto>(query);
+            return GetDataAccess().QuerySingleOrDefaultAsync<TDto>(query);
         }
 
         /// <summary>
@@ -325,7 +325,7 @@ namespace CML.DataAccess.Repositories
         public T GetInfo(object condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQuerySqlQuery<T>(condition, TableName, string.Empty, topCount: null, ignoreFields: ignoreFields, dbType: WriterDataType);
-            return GetDataAccess().ExecuteScalar<T>(query);
+            return GetDataAccess().QuerySingleOrDefault<T>(query);
         }
 
         /// <summary>
@@ -338,7 +338,7 @@ namespace CML.DataAccess.Repositories
         public T GetInfo(Expression<Func<T, bool>> condition, string[] ignoreFields = null, bool isWrite = false)
         {
             SqlQuery query = SqlQueryUtil.BuilderQueryTopSqlQuery<T>(condition, TableName, topCount: 1, dbType: ReaderDataType);
-            return GetDataAccess().ExecuteScalar<T>(query);
+            return GetDataAccess().QuerySingleOrDefault<T>(query);
         }
 
         /// <summary>
