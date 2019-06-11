@@ -27,8 +27,7 @@ namespace NewCoreWeb
             services.AddMvc();
             var builder = new ContainerBuilder();
          //   builder.Populate(services);
-            ContainerManager.UseAutofacContainer(builder)
-                .RegisterType<IUserApplication, UserApplication>(lifeStyle: LifeStyle.PerLifetimeScope);
+            ContainerManager.UseAutofacContainer(builder).RegisterType<IUserApplication, UserApplication>(lifeStyle: LifeStyle.PerLifetimeScope);
   
         //    var container = builder.Build();
             return ContainerManager.RegisterProvider(services);
