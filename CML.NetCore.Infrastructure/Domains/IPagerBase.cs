@@ -26,4 +26,16 @@ namespace CML.Lib.Domains
         /// </summary>
         int TotalCount { get; set; }
     }
+
+    /// <summary>
+    /// 分页结果
+    /// </summary>
+    /// <typeparam name="T">数据类型</typeparam>
+    public interface IPageResult<T> : IPagerBase, IEnumerable<T>
+    {
+        /// <summary>
+        /// 数据列表
+        /// </summary>
+        IEnumerable<T> Data { get; }
+    }
 }

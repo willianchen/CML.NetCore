@@ -462,14 +462,14 @@ namespace CML.DataAccess.Repositories
             return GetDataAccess(isWrite).QueryAsync<TDto>(query);
         }
 
-        public PagerList<TModel> QueryPageList<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null)
+        public IPageResult<TModel> QueryPageList<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null)
         {
             int totalCount = QueryCount(selectTable, where, cmdParms: cmdParms);
             var dataList = PageQuery<TModel>(selectColumn, selectTable, where, order, pageIndex, pageSize, cmdParms: cmdParms);
             return new PagerList<TModel>(pageIndex, pageSize, totalCount, dataList);
         }
 
-        public Task<PagerList<TModel>> QueryPageListAsync<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null)
+        public Task<IPageResult<TModel>> QueryPageListAsync<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null)
         {
             return Task.FromResult(QueryPageList<TModel>(selectColumn, selectTable, where, order, pageIndex, pageSize, cmdParms: cmdParms));
         }

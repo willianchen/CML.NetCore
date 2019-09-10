@@ -83,6 +83,8 @@ namespace CML.Lib.Result
 
         public T Value { get; set; }
 
+        public int Count { get; set; }
+
         /// <summary>
         /// 判断操作是否成功并且值不为空
         /// </summary>

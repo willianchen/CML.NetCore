@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace CML.Lib.Domains
     /// 类功能描述：PagerList
     /// 创建标识：cml 2018/2/8 15:27:46
     /// </summary>
-    public class PagerList<T> : IPagerBase
+    public class PagerList<T> : IPageResult<T>
     {
         /// <summary>
         /// 初始化分页集合
@@ -130,6 +131,19 @@ namespace CML.Lib.Domains
             var result = new PagerList<TResult>(PageIndex, PageSize, TotalCount, null);
             result.AddRange(this.Data.Select(converter));
             return result;
+        }
+
+         IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (var item in Data)
+            {
+                yield return item;
+            }
         }
     }
 }

@@ -333,7 +333,7 @@ namespace CML.DataAccess.Repositories
         /// <param name="pageSize">每页个数</param>
         /// <param name="cmdParms">参数值</param>
         /// <returns>分页结果</returns>
-        PagerList<TModel> QueryPageList<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null);
+        IPageResult<TModel> QueryPageList<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null);
 
         /// <summary>
         /// 异步分页查询（目前只支持MSSQLServer）
@@ -347,7 +347,7 @@ namespace CML.DataAccess.Repositories
         /// <param name="pageSize">每页个数</param>
         /// <param name="cmdParms">参数值</param>
         /// <returns>分页结果</returns>
-        Task<PagerList<TModel>> QueryPageListAsync<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null);
+        Task<IPageResult<TModel>> QueryPageListAsync<TModel>(string selectColumn, string selectTable, string where, string order, int pageIndex, int pageSize, object cmdParms = null);
 
         /// <summary>
         /// 更新信息
