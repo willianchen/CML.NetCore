@@ -43,6 +43,11 @@ namespace CML.Lib.Utils
             GetLogger(loggerName).Info(msg);
         }
 
+        public static void Debug(object p)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// 输出警告日志
         /// </summary>
