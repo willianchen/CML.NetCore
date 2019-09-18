@@ -1,0 +1,11 @@
+D:\GitWorkSpace\CML.NetCore\DataControl\bin\Debug\netcoreapp2.1\DataControl.deps.json
+D:\GitWorkSpace\CML.NetCore\DataControl\bin\Debug\netcoreapp2.1\DataControl.runtimeconfig.json
+D:\GitWorkSpace\CML.NetCore\DataControl\bin\Debug\netcoreapp2.1\DataControl.runtimeconfig.dev.json
+D:\GitWorkSpace\CML.NetCore\DataControl\bin\Debug\netcoreapp2.1\DataControl.dll
+D:\GitWorkSpace\CML.NetCore\DataControl\bin\Debug\netcoreapp2.1\DataControl.pdb
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.csprojAssemblyReference.cache
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.AssemblyInfoInputs.cache
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.AssemblyInfo.cs
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.dll
+D:\GitWorkSpace\CML.NetCore\DataControl\obj\Debug\netcoreapp2.1\DataControl.pdb

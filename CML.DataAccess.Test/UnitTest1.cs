@@ -25,7 +25,8 @@ namespace CML.DataAccess.Test
             demoRep.Insert(newDemo);
             #endregion
 
-            OutOfMemoryException #region ²éÑ¯
+            //OutOfMemoryException 
+                #region ²éÑ¯
             var list = demoRep.QueryList(x=>x.FName=="test1");
             var jsonList = new NewtonsoftJsonSerializer().GetJsonByObj(list);
             Console.WriteLine(jsonList);
